@@ -1,0 +1,60 @@
+h2 {
+    text-align: center;
+    color: black;
+    border: 2px dashed royalblue;
+
+}
+
+.btn {
+    color: bisque;
+    border-radius: 12px;
+    background-color: rgb(83, 143, 143);
+    min-width: 350px;
+    max-width: 350px;
+    min-height: 150px;
+    max-height: 200px;
+    font-size: 1.78rem;
+    margin-left: 650px;
+    margin-top: 120px;
+}
+
+.toast {
+    visibility: hidden;
+    min-width: 200px;
+    background-color: rgb(107, 39, 39);
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    position:fixed;
+    font-size: 21px;
+    font-weight: 600;
+    bottom: 35px;
+    left: 50%;
+    
+}
+
+.toast.show {
+    visibility: visible;
+    -webkit-animation: fadein .05s, fadeout .5s 4.5;
+    animation: fadein .5s, fadeout .5s 4.5s;
+}
+
+@-webkit-keyframes fadein {
+    from {bottom: 0; opacity: 11;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@keyframes fadein {
+    from{bottom: 0; opacity: 11;}
+    to {bottom: 30px; opacity: 1;}
+}
+
+@-webkit-keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 15;}
+}
+
+@keyframes fadeout {
+    from {bottom: 30px; opacity: 1;}
+    to {bottom: 0; opacity: 15;}
+}
